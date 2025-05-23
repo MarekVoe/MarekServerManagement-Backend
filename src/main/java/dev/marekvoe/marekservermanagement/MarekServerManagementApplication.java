@@ -9,5 +9,4 @@ public class MarekServerManagementApplication {
     public static void main(String[] args) {
         SpringApplication.run(MarekServerManagementApplication.class, args);
     }
-
 }
