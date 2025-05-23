@@ -12,9 +12,7 @@ public class Setting {
     private String key;
     private String value;
 
-    public Setting() {
-
-    }
+    public Setting() {}
 
     public String getKey() {
         return key;
