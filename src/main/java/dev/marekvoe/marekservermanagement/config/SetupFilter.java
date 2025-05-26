@@ -28,6 +28,7 @@ public class SetupFilter extends OncePerRequestFilter {
         String uri = request.getRequestURI();
 
         boolean isSetupUri = uri.startsWith("/api/setup");
+        boolean isNodesUri = uri.startsWith("/api/nodes");
         boolean isSwaggerUi = uri.startsWith("/swagger-ui");
         boolean isApiDocs   = uri.startsWith("/v3/api-docs");
         boolean isWebjars   = uri.startsWith("/webjars/");
@@ -35,6 +36,7 @@ public class SetupFilter extends OncePerRequestFilter {
 
         if (!setupService.isSetupComplete()
                 && !isSetupUri
+                && !isNodesUri
                 && !isSwaggerUi
                 && !isApiDocs
                 && !isWebjars

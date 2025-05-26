@@ -1,10 +1,16 @@
 package dev.marekvoe.marekservermanagement.models;
 
-
 import dev.marekvoe.marekservermanagement.constants.NodeStatus;
 import jakarta.persistence.*;
 
 import java.util.Date;
+
+/*
+ -------------------------------------------------------------------------------------------------------------------------------------
+ Node představuje instanci serveru, která je součástí systému pro správu serverů.
+ Každý node reprezentuje samostatný server nebo službu, kterou lze spravovat, monitorovat a konfigurovat prostřednictvím této aplikace.
+ -------------------------------------------------------------------------------------------------------------------------------------
+*/
 
 @Entity
 @Table(name = "nodes")
